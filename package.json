@@ -1,0 +1,33 @@
+{
+  "name": "automake",
+  "version": "1.0.0",
+  "description": "A tool to duplicate your code any number of times",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^19.0.8",
+    "electron-builder": "^23.1.0"
+  },
+  "dependencies": {
+    
+  },
+  "build": {
+    "appId": "com.shashank.automake",
+    "productName": "Auto Make",
+    "target": "NSIS",
+    "directories": {
+      "buildResources": "resources",
+      "output": "release"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
+  }
+}
